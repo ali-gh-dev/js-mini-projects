@@ -6,7 +6,8 @@ function heartRain() {
         let randomColor = colors[Math.floor(Math.random() * 5)]
         let el = document.createElement('div')
         el.className = 'heart'
-        el.innerHTML = '&#10084;'
+        // el.innerHTML = '&#10084;'
+        el.innerHTML = '&#127809;'
         el.setAttribute('style', `color:${randomColor};position:fixed;top:-40px;left:${Math.random() * 100}%`)
         document.body.appendChild(el)
 
@@ -14,5 +15,5 @@ function heartRain() {
             el.remove()
         }, 4000)
     }
-    setInterval(createHeart, 20)
+    setInterval(createHeart, 70)
 }

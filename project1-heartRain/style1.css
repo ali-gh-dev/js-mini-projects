@@ -11,7 +11,24 @@ body{
 }
 
 @keyframes fall {
+    20%{
+        transform: translate(-50px,25vh);
+        font-size: 2rem;
+    }
+    40%{
+        transform: translate(50px,50vh);
+        font-size: 2rem;
+    }
+    60%{
+        transform: translate(-50px,75vh);
+        font-size: 1rem;
+    }
+    80%{
+        transform: translate(50px,100vh);
+        font-size: 1rem;
+    }
     100% {
-        transform: translateY(110vh);
+        transform: translate(-50px,125vh);
+        font-size: 0;
     }
 }
