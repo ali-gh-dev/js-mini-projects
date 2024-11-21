@@ -1,0 +1,17 @@
+body{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./images/landscape-photography-tutorials.jpg");
+}
+.heart {
+    color: red;
+    font-size: 3rem;
+    opacity: 0.6;
+    animation: fall 4s linear 0s 1;
+    /*animation-direction: reverse;*/
+
+}
+
+@keyframes fall {
+    100% {
+        transform: translateY(110vh);
+    }
+}
