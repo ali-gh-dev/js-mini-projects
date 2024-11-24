@@ -1,19 +1,17 @@
-let darkMode = localStorage.getItem('darkMode') || 'false'
 let checkBox = document.getElementById('dark-mode-toggle')
-
-
 
 function updateLocaleStorage(){
     if (checkBox.checked){
         localStorage.setItem('darkMode','true')
-        location.reload()
+        setDarkMode()
     }else{
         localStorage.setItem('darkMode','false')
-        location.reload()
+        setDarkMode()
     }
 }
 
 function setDarkMode(){
+    let darkMode = localStorage.getItem('darkMode')
     if (darkMode === 'true'){
         checkBox.checked = true
         document.body.classList.add('dark-mode')
