@@ -1,4 +1,5 @@
 let txt = 'hi dear users i am "Ali" from Tehran'
+// let txt = 'سلام به همه ی دوستان گرامی'
 let h2 = document.getElementById('txt')
 
 //Functions

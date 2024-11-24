@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.dark-mode{
+    background-color: #494545 !important;
+    color: white !important;
+}
+
+body {
+    background-color: #bfbbbb;
+    color: black;
+    transition: all 0.3s linear;
+}
+
+.dark-mode-check {
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.container {
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
