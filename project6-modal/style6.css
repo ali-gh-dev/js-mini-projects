@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+    border: 2px #373434 solid;
+    border-radius: 0.5rem;
+    transition: all 0.3s linear;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #6060d2;
+    color: white;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*display: none;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-card {
+    background-color: #625a7a;
+    color: white;
+    border: 2px #433a53 solid;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    animation: move 0.5s linear 0s 1 forwards;
+}
+
+.modal-card-header {
+    text-align: right;
+    padding: 0.5rem 0;
+}
+
+i.bi {
+    margin: 0.75rem;
+    font-size: 1.25rem;
+    color: red;
+    cursor: pointer;
+}
+
+.modal-card-body {
+    text-align: center;
+    padding: 0.5rem;
+
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
