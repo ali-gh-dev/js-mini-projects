@@ -6,7 +6,7 @@ function createNotif() {
 
     setTimeout(() => {
         notif.remove()
-    }, 4000)
+    }, 3500)
 }
 
 
